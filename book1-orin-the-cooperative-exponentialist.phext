@@ -56,7 +56,34 @@ Other than his mother, father, and big sister, Orin was sure of two things when 
 ------------
 Orin had just turned 12 years old. The summer of '94 held the promise of a world not-yet connected. The AOL disk sitting on his desk at home had been waiting for this day. Internet access wasn't very widespread yet, and mobile phones were even less common. The smartphone wouldn't be invented for another 13 years.
 
-The U.S. Robotics box ushered in the new era that Orin knew was coming. They had dial-up at school - but now his family would be able to go online 24/7!
+The U.S. Robotics box ushered in the new era that Orin knew was coming. They had dial-up at school - but now his family would be able to go online 24/7!June 17, 1998
+-------------
+Orin felt the rush of invention the moment the compile finally worked. He had been up all night working on a hybrid encryption approach he called "Lock Down". It leveraged pseudo-random numbers to obscure how the encryption keys were stored. (He would later learn that security through obscurity was really just window dressing, but for the moment his mind raced with possibility).
+
+When encrypting a document, Lock Down would sample random bits from the operating system to produce a header that appeared to be white noise. Orin encoded 128-bit keys within a 1024-bit buffer - meaning that only 12.5% of header bits encoded meaningful data. The rest were pure white noise. Orin distributed key bits according to a permutation algorithm he designed.
+
+The first seven bits of each byte were sampled randomly. The value of the eighth bit was set to 0 if there were an odd number of 1s, and 1 if there were an even number of 1s, and then XOR'd (exclusive-OR) with the next bit from the encryption key. This left the resulting buffer with a distribution very close to random. Orin would later learn about the one-time-pad cipher, a variation of his invention.
+
+His heart pounded as he wrote up the announcement on the web forum (Ars Technica) that he liked to frequent.
+
+> > Title: Perfectly Hidden Encryption Keys
+> > Author: Orin Hiller
+> > Date: June 17, 1998
+
+> > Hey all! I've created an encryption program called Lock Down. It applies
+> > Rijandael encryption to your files, securing them from attackers. An MD5 of
+> > your passphrase is encoded in a randomized header, producing a different
+> > encryption header each time you encode your file. Let me know what you
+> > think!
+
+> Hi Orin...what's the point of this program? Can't we just use OpenSSL?
+
+> --Pete the CD-R Ripper
+
+OpenSSL only has a command line. Lock Down is a simple GUI that allows you to drag+drop your files to encrypt or decrypt them. It automatically stores the variant needed based upon header detection. If you drop an encrypted file, it will produce <file>.decrypted. If you drop an un-encrypted file, it will produce <file>.encrypted!
+
+Orin sat back in his chair and sipped his Diet Mountain Dew. It was way past his bedtime, but Lock Down was real!
+
 December 31, 1999
 -----------------
 Y2K was finally here! Orin was now 17 years old, and he had been following the impact of Y2K in the news over the past few years. He had experimented with settings his Windows 98 computer ahead to 2000 with no ill effects. The news was probably over-blowing the issue. Still, Orin made sure he had plenty of batteries for his flash light leading up to new years.
@@ -417,11 +444,20 @@ Where pundits saw slowing growth, Orin saw the continued expansion of the human 
 ---------------
 Orin's space-time-scope was a reality! Technically, the STS broke the laws of optics. Orin's design utilized time and complex predictive modeling to trade frame rate for resolution. On a typical 48 megapixel camera, each pixel is approximately 1 micrometer wide. Moving the sensor ever so slightly with respect to a desired frame of reference allowed him to greatly increase the effective resolution of composite images.
 
-At 2 um/ms, Orin could move his smartphone's camera sensor through 8 image positions every millisecond. Coupled with a space-time aware imaging program, Orin's new product instantly produced images with 4x image quality for relatively low cost.High-precision stepper motor sources
+At 2 um/ms, Orin could move his smartphone's camera sensor through 8 image positions every millisecond. Coupled with a space-time aware imaging program, Orin's new product instantly produced images with 4x image quality for relatively low cost.October 2, 2025
+---------------
+3I/ATLAS produced too much nickel. When it reached 2.6 AU, it also produced too much iron.
+
+Orin had read an article by Avi Loeb the night he developed the STS. He quickly calculated how far each micrometer adjustment of the STS would reach at that distance. He started working on a proposal for NASA to review. The Mars Reconnaissance Orbiter had the best position for a close-up flyby: it covered an area of 30 km at 0.2 AU. Orin regretted not having published the design for his STS much sooner. The comet had only come into view a few months ago, but now he was working against the clock to convince NASA to use "an unproven technique".
+
+<Flashback to June 17, 1998>High-precision stepper motor sources
 
 https://www.pi-usa.us/en/products/precision-motorized-linear-stages/micropositioners-7-48
 
-0.25 micrometer resolutionPrecursor Sources
+0.25 micrometer resolutionExtreme Nickel Production on 3I/ATLAS
+https://avi-loeb.medium.com/new-data-on-the-extreme-nickel-production-of-3i-atlas-c889b20342c1
+
+HiRISE: https://www.uahirise.org/hiview/Precursor Sources
 
 
 https://lincolnweather.unl.edu/january-2025-lincoln-ne-climate-data/
