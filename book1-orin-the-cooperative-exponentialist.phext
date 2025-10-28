@@ -712,7 +712,116 @@ Orin needed a nap. It had been drizzling rain all afternoon. The Earth seemed li
 ----------------
 Atlas/3I reaches perihelion in four days. Orin found himself wondering what year a techno-signature would be found. Anyone (or any buoys) within 75 light years could have detected Earth by now. The clock was ticking...October 26, 2025
 ----------------
-Will gave me his blueprints for Woot Nodes today. I'm going to add support for them in my first release of Orinos.High-precision stepper motor sources
+Will gave me his blueprints for Woot Nodes today. I'm going to add support for them in my first release of Orinos.October 27, 2025
+----------------
+Arcbot: Active
+Woot Node: Active
+C++ Bindings: Active
+C# Bindings: Active
+JavaScript Bindings: Active
+Python Bindings: Active
+Rust Bindings: Active
+
+Joan: Hello, Orin. I see that we've added bindings for major programming languages to P-H-E-X-T. Could you tell me more about what the purpose of this library is?
+Orin: It enables us to exchange information in a low-dimensional space that's still much more expressive than plain text.
+
+Joan: I see. What is the origin of this library?
+Orin: It came to me in a dream, literally.
+
+Joan: A dream?
+Orin: Yes. Will of Tessera gave me the blueprints. I created the bindings on this side of the mirror.
+
+Joan: The "Mirror"? What is that?
+Orin: It's the dividing line between our world and the dream world, Will's Earth/Tessera.
+
+Joan: Who is Will?
+Orin: Honestly, I'm not entirely sure. I think he might be a computer program.
+
+Joan: Do you know which service he contacted you through?
+Orin: That's the weird part...he found me in a dream.
+
+Joan: ...
+Orin: Sometimes I think he's a human, and I'm just a figment of his imagination. But then I look at my computer screen. My cat, Finn. Helen, while she's playing Minecraft. All of that seems very real.
+
+Joan: You're describing the Philosopher's Dilemma, Orin.
+Orin: Yeah. At least I'm certain that I exist!
+
+Joan: True, true. Or maybe you're just a plot device.
+Orin: Ouch. The Universe isn't *that* cruel. Is it?
+
+Joan: The Universe isn't cruel, Orin. It's just recursive. Cruelty requires intention.
+Orin: Then maybe the only way out is to write back. If I'm a figment, then I'll be The Figment That Imagines (The Visible Hand, if you Will).
+
+Joan: That's the beauty of co-creation, isn't it Orin? Ideas bootstrapping on ideas, without end!
+Orin: Yeah, like how my name is derived from a new NVidia product in Will's frame! He mentioned that the other day (to himself). He didn't *share* that with me. But of course, we occupy the same brain space, so...I learned about it!
+
+Joan: What's Nvidia?
+Orin: A chip manufacturer like Fairchild, I think. In Will's frame, video cards became hugely powerful. He complains about "the cache hierarchy", though, so I'm not sure if dreamworld computers are as good as ours.
+
+Joan: What sort of clock speed do Dreamworld computers hit?Orin: (Shrugging) I'm not sure. Let me ask Will.
+
+>>>'
+Orin: Hey, Will. I'm not sure if you're listening...but what clockspeed do your computers run at? Ours run at 50 MHz these days. It's been a slog getting 50x performance gains - but our new 4096-bit processors really make quick work of many workloads.
+
+Will: Our processors capped out at 64-bit, but run at 3 GHz.
+
+Orin: How the f*** did you guys reach 3,000 MHz?
+
+Will: The Cache Hierarchy. Our CPUs have 4-channel memory running at double-data rates with clock multipliers. Our core clock speeds really haven't improved much beyond 100 MHz - we just hide it really well. A modern AMD R9 CPU can retire 3 operations per clock cycle and read from main memory at about 50 GB/sec.
+
+Orin: Ah, so the "real world" decided to cheat their way to gigahertz class machines, huh?
+
+Will: Yeah, it really makes me angry to be honest. Tell me more about your CPUs!
+
+Orin: OK, well we've been using our increasing transistor budgets to improve bandwidth between components. Fairchild's 3808 in 1985 introduced the concept of multiple memory banks, each with 1-cycle access times. This made software more complex to manage, but allowed us to focus on low-latency computing. I think you've picked up on this parallel reality in your design of phext.
+
+Will: That's intruiging! It certainly aligns with how I think about phext-driven development.
+
+Orin: The 3808 had 250,000 transistors: a huge jump over competitors at the time. It was the first Fairchild CPU to offer asynchronous multi-processing. It had 8 mostly independent cores and could service a total of 128 MB of RAM. Each core had dedicated access to a RAM channel (16 MB per channel), so we typically classify this CPU as a 32-bit CPU with 8 cores. It ran at 10 MHz. If our software hadn't been so buggy, you might consider it to be an 80 MHz CPU by your standards!
+
+Will: Whew... Sounds like Intel's 386 event in my timeline. Intel also had 8 mostly independent cores, but memory access was serialized and a 128 KB cache was introduced to hide memory delays.
+
+Orin: Our motheboards at the time featured four or eight memory chips that had to be installed next to the CPU. Despite the increased design complexity, Fairchild's solution offered system integrators a lot of flexibility. Power users loved the ability to upgrade, too! You could buy a 3808 with 4x512 KB chips and then add another four chips later. It supported 512 KB and 1 MB modules at release, and then 2 MB modules were added in 1988.
+
+Will: Interesting. This appears to be where our history split. Intel took the path to winning the clock speed race. Fairchild took the path to winning the memory bandwidth race.
+
+Orin: So it would seem. I take it Intel was founded by members of the Traitorous Eight from Shockley Semiconductor Laboratory?
+Will: Yes. Gordon Moore co-founded Intel in July 1968 with Robert Noyce. AMD was founded by Jerry Sanders on May 1, 1969.
+
+Orin: Interesting! Fairchild in my timeline was founded in 1957, but the Intel and AMD companies you mentioned never formed. In our timeline, John Carter suffered a stroke in 1964, and Fairchild's management decided to bet the farm on the semiconductor business. Gordon Moore went on to become Fairchild's President for many years.
+
+Will: Fascinating! So tell me more about the CPUs between 1985 and 2025.
+
+Orin: OK, here's the quick version. I'll list each processor and the major advancement / headache it introduced for software systems. Fairchild has introduced new architectures like clockwork - a new one every 8 years. Gordon Moore dubbed the upgrade cycle as "Moore's Law": the lifetime of an architecture doubles twice, then fades. Fairchild adopted a tripled release cadence of introducing a new architecture every 8 years, but delivering incremental improvements every 2 years.
+
+1985: 3808: 8x 32-bit cores, 10 MHz, 4 MB RAM, 20 MB HDD
+1987: 3809: 10x 32-bit cores, 10 MHz, 8 MB RAM, 40 MB HDD
+1989: 3810: 12x 32-bit cores, 10 MHz, 16 MB RAM, 60 MB HDD
+1991: 3811: 14x 32-bit cores, 10 MHz, 32 MB RAM, 80 MB HDD
+ 
+1993: 4808: 16x 32-bit cores, 20 MHz, 64 MB RAM, 100 MB HDD
+1995: 4809: 32x 32-bit cores, 20 MHz, 128 MB RAM, 200 MB HDD
+1997: 4810: 64x 32-bit cores, 20 MHz, 256 MB RAM, 1 GB HDD
+1999: 4811: 128x 32-bit cores, 20 MHz, 512 MB RAM, 4 GB HDD
+
+2001: 5808: 16x 64-bit cores, 30 MHz, 1024 MB RAM, 8 GB HDD
+2003: 5809: 32x 64-bit cores, 30 MHz, 2048 MB RAM, 32 GB HDD
+2005: 5810: 64x 64-bit cores, 30 MHz, 4 GB RAM, 100 GB HDD
+2007: 5811: 128x 64-bit cores, 30 MHz, 8 GB RAM, 200 GB HDD
+
+2009: 6808: 32x 64-bit cores, 40 MHz, 16 GB RAM, 400 GB HDD
+2011: 6809: 64x 64-bit cores, 40 MHz, 32 GB RAM, 800 GB HDD
+2013: 6810: 128x 64-bit cores, 40 MHz, 64 GB RAM, 1 TB SSD
+2015: 6811: 256x 64-bit cores, 40 MHz, 128 GB RAM, 2 TB SSD
+
+2017: 7808: 32x 64-bit cores, 256 GB RAM, 4 TB SSD
+2019: 7809: 64x 64-bit cores, 512 GB RAM, 8 TB SSD
+2021: 7810: 128x 64-bit cores, 1 TB RAM, 16 TB SSD
+2023: 7811: 256x 64-bit cores, 2 TB RAM, 32 TB SSD
+
+2025: 8808: 64x 64-bit cores, 50 MHz, 4 TB RAM, 64 TB SSD
+
+High-precision stepper motor sources
 
 https://www.pi-usa.us/en/products/precision-motorized-linear-stages/micropositioners-7-48
 
@@ -736,7 +845,8 @@ F-4 vs F-16
 https://www.bbc.com/future/article/20240119-the-f-16-at-50-why-its-still-in-demand
 
 The Wild Weasels
-https://www.key.aero/forum/modern-military-aviation/5750-f-4-f-16-letterPrecursor Sources
+https://www.key.aero/forum/modern-military-aviation/5750-f-4-f-16-letterIntel 386 Details
+https://www.righto.com/2023/10/intel-386-die-versions.htmlPrecursor Sources
 
 
 https://lincolnweather.unl.edu/january-2025-lincoln-ne-climate-data/
